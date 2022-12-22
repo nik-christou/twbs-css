@@ -1,6 +1,7 @@
 
 // String Template Literals exports
 export {RootCssTemplateLiteral} from './dist/literal/root.literal.css.js';
+export {HostCssTemplateLiteral} from './dist/literal/host.literal.css.js';
 export {RebootCssTemplateLiteral} from './dist/literal/reboot.literal.css.js';
 export {TypeCssTemplateLiteral} from './dist/literal/type.literal.css.js';
 export {ImagesCssTemplateLiteral} from './dist/literal/images.literal.css.js';
@@ -36,6 +37,7 @@ export {UtilitiesCssTemplateLiteral} from './dist/literal/utilities.literal.css.
 
 // Lit element Tagged Template Literals exports
 export {RootCssTaggedTemplate} from './dist/tagged/root.tagged.css.js';
+export {HostCssTaggedTemplate} from './dist/tagged/host.tagged.css.js';
 export {RebootCssTaggedTemplate} from './dist/tagged/reboot.tagged.css.js';
 export {TypeCssTaggedTemplate} from './dist/tagged/type.tagged.css.js';
 export {ImagesCssTaggedTemplate} from './dist/tagged/images.tagged.css.js';

@@ -7,6 +7,14 @@ const rootItem = {
     taggedTemplateConstName: 'RootCssTaggedTemplate'
 };
 
+const hostItem = {
+    srcCss: 'host.css',
+    literalTemplateFilename:'host.literal.css.js',
+    literalTemplateConstName: 'HostCssTemplateLiteral',
+    taggedTemplateFilename: 'host.tagged.css.js',
+    taggedTemplateConstName: 'HostCssTaggedTemplate'
+};
+
 const rebootItem = {
     srcCss: 'reboot.css',
     literalTemplateFilename:'reboot.literal.css.js',
@@ -265,6 +273,7 @@ const utilitiesItem = {
 
 const bootstrapItems = [
     rootItem,
+    hostItem,
     rebootItem,
     typesItem,
     imagesItem,

@@ -410,4 +410,10 @@ progress {
 [hidden] {
   display: none !important;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  :host {
+    scroll-behavior: smooth;
+  }
+}
 `;

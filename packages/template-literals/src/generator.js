@@ -14,7 +14,7 @@ for(const bootstrapItem of bootstrapItems) {
     console.log(`Processing: ${bootstrapItem.srcCss}`);
 
     // read the css file
-    const itemStyles = fs.readFileSync(`gen/${bootstrapItem.srcCss}`);
+    const stylesStringBuffer = fs.readFileSync(`gen/${bootstrapItem.srcCss}`);
 
     // delete string literal template file in 'dist/literal' if present
     fs.rmSync(`./dist/literal/${bootstrapItem.literalTemplateFilename}`, {force: true, recursive: true});
@@ -28,7 +28,7 @@ for(const bootstrapItem of bootstrapItems) {
     // write css styles as string literal
     literalTemplateStream.once('open', (fd) => {
         literalTemplateStream.write(`export const ${bootstrapItem.literalTemplateConstName} = \`\n`);
-        literalTemplateStream.write(itemStyles);
+        literalTemplateStream.write(stylesStringBuffer);
         literalTemplateStream.write("`;");
         literalTemplateStream.end();
     });
@@ -40,7 +40,7 @@ for(const bootstrapItem of bootstrapItems) {
     taggedTemplateStream.once('open', (fd) => {
         taggedTemplateStream.write(`import {css} from 'lit';\n`);
         taggedTemplateStream.write(`export const ${bootstrapItem.taggedTemplateConstName} = css\`\n`);
-        taggedTemplateStream.write(itemStyles);
+        taggedTemplateStream.write(stylesStringBuffer);
         taggedTemplateStream.write("`;");
         taggedTemplateStream.end();
     });
