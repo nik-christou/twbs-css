@@ -1,0 +1,46 @@
+{
+  "name": "@twbs-css/template-literals",
+  "version": "1.0.0",
+  "description": "Bootstrap CSS as template & tagged literals",
+  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
+  "author": "Nikolas Christou",
+  "license": "MIT",
+  "homepage": "https://github.com/nik-christou/twbs-css-template-literals",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nik-christou/twbs-css-template-literals"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "/dist"
+  ],
+  "keywords": [
+    "bootstrap css",
+    "bootstrap css components",
+    "template literals",
+    "tagged templates"
+  ],
+  "scripts": {
+    "build": "npm run css",
+    "css-compile": "sass --style expanded --load-path=node_modules --no-source-map --no-error-css src/scss:gen/",
+    "css-prefix": "postcss gen/*.css --no-map --use autoprefixer --replace",
+    "template-generator": "node src/generator.js",
+    "css": "npm-run-all css-compile css-prefix template-generator"
+  },
+  "dependencies": {
+    "bootstrap": "5.2.3",
+    "lit": "2.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "nodemon": "2.0.20",
+    "npm-run-all": "4.1.5",
+    "postcss": "8.4.20",
+    "postcss-cli": "10.1.0",
+    "sass": "1.57.1"
+  }
+}
