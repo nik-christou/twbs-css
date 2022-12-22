@@ -24,6 +24,16 @@ import {RootCssTaggedTemplate} from '@twbs-css/template-literals';
 Main use case is to allow easier css for web components (with string literals)
 and for Lit elements components (with tagged templates).
 
+Example using the string literals in plain web components:
+```javascript
+const template = document.createElement('template');
+template.innerHTML = `
+<style>
+    ${RootCssTemplateLiteral}
+</style>
+<<add rest of html template>>`;
+```
+
 Example using the tagged template literals in Lit element components:
 ```javascript
 static get styles() {
