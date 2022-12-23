@@ -3,6 +3,11 @@ The purpose of this node library is to provide an easy and maintainble way to us
 bootstrap customization tools and generate css exported as string and tagged literals that
 can easily be integrated into web components.
 
+## Versioning
+| Bootstrap 	| Library versions 	|
+|-----------	|------------------	|
+| v5.2.3    	| v1.0.x           	|
+
 ## Installation
 
 Install via npm:

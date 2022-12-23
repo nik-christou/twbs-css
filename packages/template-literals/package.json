@@ -1,6 +1,6 @@
 {
   "name": "@twbs-css/template-literals",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bootstrap CSS as template & tagged literals",
   "main": "index.js",
   "module": "index.js",
