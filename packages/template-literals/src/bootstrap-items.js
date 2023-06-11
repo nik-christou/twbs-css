@@ -55,6 +55,14 @@ const gridItem = {
     taggedTemplateConstName: 'GridCssTaggedTemplate'
 };
 
+const gridCssLayoutItem = {
+    srcCss: 'grid_css_layout.css',
+    literalTemplateFilename:'grid-layout.literal.css.js',
+    literalTemplateConstName: 'GridLayoutCssTemplateLiteral',
+    taggedTemplateFilename: 'grid-layout.tagged.css.js',
+    taggedTemplateConstName: 'GridLayoutCssTaggedTemplate'
+};
+
 const helpersItem = {
     srcCss: 'helpers.css',
     literalTemplateFilename:'helpers.literal.css.js',
@@ -279,6 +287,7 @@ const bootstrapItems = [
     imagesItem,
     containersItem,
     gridItem,
+    gridCssLayoutItem,
     helpersItem,
     tablesItem,
     formsItem,

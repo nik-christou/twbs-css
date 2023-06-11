@@ -14,7 +14,7 @@ for(const bootstrapItem of bootstrapItems) {
     console.log(`Processing: ${bootstrapItem.srcCss}`);
 
     // read the css file
-    const stylesStringBuffer = fs.readFileSync(`gen/${bootstrapItem.srcCss}`);
+    const stylesStringBuffer = fs.readFileSync(`generated/${bootstrapItem.srcCss}`);
 
     // delete string literal template file in 'dist/literal' if present
     fs.rmSync(`./dist/literal/${bootstrapItem.literalTemplateFilename}`, {force: true, recursive: true});
