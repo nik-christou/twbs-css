@@ -6,9 +6,9 @@ export const ImagesCssTemplateLiteral = `
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid var(--bs-border-color);
-  border-radius: 0.375rem;
+  background-color: var(--bs-body-bg);
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
   max-width: 100%;
   height: auto;
 }
@@ -24,6 +24,6 @@ export const ImagesCssTemplateLiteral = `
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: var(--bs-secondary-color);
 }
 `;

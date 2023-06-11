@@ -1,4 +1,13 @@
 export const GridLayoutCssTemplateLiteral = `
+:root {
+  --bs-breakpoint-xs: 0;
+  --bs-breakpoint-sm: 576px;
+  --bs-breakpoint-md: 768px;
+  --bs-breakpoint-lg: 992px;
+  --bs-breakpoint-xl: 1200px;
+  --bs-breakpoint-xxl: 1400px;
+}
+
 .grid {
   display: grid;
   grid-template-rows: repeat(var(--bs-rows, 1), 1fr);

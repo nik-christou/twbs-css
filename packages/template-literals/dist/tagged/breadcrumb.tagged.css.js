@@ -6,9 +6,9 @@ export const BreadcrumbCssTaggedTemplate = css`
   --bs-breadcrumb-margin-bottom: 1rem;
   --bs-breadcrumb-bg: ;
   --bs-breadcrumb-border-radius: ;
-  --bs-breadcrumb-divider-color: #6c757d;
+  --bs-breadcrumb-divider-color: var(--bs-secondary-color);
   --bs-breadcrumb-item-padding-x: 0.5rem;
-  --bs-breadcrumb-item-active-color: #6c757d;
+  --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
