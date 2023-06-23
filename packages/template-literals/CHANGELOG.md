@@ -16,3 +16,7 @@ Initial implementation
 
 ## 2.0.0 (11/06/2023)
 - Updated bootstrap dependency to v5.3.0
+- Added new process to create an additional file for experimental CSS Grid Layout from bootstrap
+
+## 2.0.1 (23/06/2023)
+- Fixed issue with missing grid-layout exports in index.js

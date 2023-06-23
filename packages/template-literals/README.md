@@ -1,5 +1,5 @@
 # template-literals
-The purpose of this node library is to provide an easy and maintainble way to use existing 
+The purpose of this node library is to provide an easy and maintainable way to use existing 
 bootstrap customization tools and generate css exported as string and tagged literals that
 can easily be integrated into web components.
 
